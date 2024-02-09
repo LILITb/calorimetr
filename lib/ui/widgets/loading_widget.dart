@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
-import '../../constants/colors.dart';
+import '../colors.dart';
 
 class Loading extends StatelessWidget {
   const Loading({

@@ -1,4 +1,4 @@
-import 'package:caloriegram/constants/colors.dart';
+import 'package:caloriegram/ui/colors.dart';
 import 'package:flutter/material.dart';
 
 final caloryTheme = ThemeData(
@@ -9,8 +9,13 @@ final caloryTheme = ThemeData(
   indicatorColor: AppColors.appThemeColor,
   splashColor: AppColors.appThemeColor,
   textTheme: const TextTheme(
-    headlineLarge: TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color:AppColors.blackText),
+    headlineLarge: TextStyle(
+        fontSize: 24, fontWeight: FontWeight.w500, color: AppColors.blackText),
     headlineSmall: TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
+    bodyLarge: TextStyle(
+        fontSize: 16, fontWeight: FontWeight.w500, color: AppColors.grey),
+    bodySmall: TextStyle(
+        fontSize: 14, fontWeight: FontWeight.w400, color: AppColors.blackText),
   ),
   textSelectionTheme: const TextSelectionThemeData(
       selectionHandleColor: Colors.white, selectionColor: Colors.white),
@@ -34,25 +39,32 @@ final caloryTheme = ThemeData(
     style: ElevatedButton.styleFrom(
       foregroundColor: AppColors.whiteColor,
       textStyle: const TextStyle(
-          fontSize: 16, letterSpacing: 1, fontWeight: FontWeight.w500),
+        fontSize: 16,
+        letterSpacing: 1,
+        fontWeight: FontWeight.w500,
+      ),
       backgroundColor: AppColors.appThemeColor,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(33),
+        borderRadius: BorderRadius.circular(13),
       ),
     ),
   ),
   inputDecorationTheme: const InputDecorationTheme(
       focusColor: AppColors.appThemeColor,
       focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(12),
+          ),
           borderSide: BorderSide(color: AppColors.appThemeColor)),
       errorStyle: TextStyle(color: AppColors.errorColor),
       floatingLabelStyle: TextStyle(color: AppColors.appThemeColor),
       labelStyle: TextStyle(color: AppColors.ligthGrey),
       border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(12),
-          ),
-          borderSide: BorderSide(color: AppColors.ligthGrey)),
+        borderRadius: BorderRadius.all(
+          Radius.circular(12),
+        ),
+        borderSide: BorderSide(color: AppColors.ligthGrey),
+      ),
       errorMaxLines: 2,
       suffixIconColor: AppColors.ligthGrey,
       prefixIconColor: AppColors.ligthGrey),
