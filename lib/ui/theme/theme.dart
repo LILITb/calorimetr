@@ -1,4 +1,4 @@
-import 'package:caloriegram/ui/colors.dart';
+import 'package:caloriegram/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 final caloryTheme = ThemeData(
@@ -9,9 +9,17 @@ final caloryTheme = ThemeData(
   indicatorColor: AppColors.appThemeColor,
   splashColor: AppColors.appThemeColor,
   textTheme: const TextTheme(
+    titleSmall: TextStyle(
+        fontSize: 12, fontWeight: FontWeight.w400, color: AppColors.ligthGrey),
+    titleMedium: TextStyle(
+        fontSize: 18, fontWeight: FontWeight.w700, color: AppColors.blackText),
+    headlineMedium: TextStyle(
+        fontSize: 24, fontWeight: FontWeight.w700, color: AppColors.blackText),
     headlineLarge: TextStyle(
         fontSize: 24, fontWeight: FontWeight.w500, color: AppColors.blackText),
     headlineSmall: TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
+    bodyMedium: TextStyle(
+        fontSize: 16, fontWeight: FontWeight.w400, color: AppColors.blackText),
     bodyLarge: TextStyle(
         fontSize: 16, fontWeight: FontWeight.w500, color: AppColors.grey),
     bodySmall: TextStyle(

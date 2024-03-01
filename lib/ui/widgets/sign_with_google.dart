@@ -31,8 +31,19 @@ class _SignWithGoogleState extends State<SignWithGoogle> {
                   color: Colors.white24,
                   borderRadius: BorderRadius.circular(12)),
               height: 56,
-              child: const Row(
-                  children: [ImageIcon(AssetImage('assets/icons/g.png'))]),
+              child:
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                const Image(
+                  image: AssetImage('assets/icons/g.png'),
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  'Login with Google',
+                  style: theme.textTheme.bodyMedium,
+                ),
+              ]),
             ))
           ]),
     );

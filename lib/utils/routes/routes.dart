@@ -1,10 +1,10 @@
+import 'package:caloriegram/futures/home_pages/home_page.dart';
 import 'package:caloriegram/utils/routes/routes_name.dart';
-import 'package:caloriegram/views/accounted_sceens/sign_up/signup_page.dart';
+import 'package:caloriegram/futures/accounted_sceens/sign_up/signup_page.dart';
 import 'package:flutter/material.dart';
 
-import '../../views/accounted_sceens/login/login_screen.dart';
-import '../../views/accounted_sceens/resset_password/resset_password_screen.dart';
-import '../../views/home_screens/home_screen.dart';
+import '../../futures/accounted_sceens/login/login_screen.dart';
+import '../../futures/accounted_sceens/resset_password/resset_password_screen.dart';
 
 PageRoute _getPageRoute(Widget child, RouteSettings settings) {
   return _FadeRoute(child: child, routeName: settings.name!);
@@ -15,7 +15,7 @@ class Routes {
     var routingData = settings.name?.getRoutingData;
     switch (routingData?.route) {
       case RoutesName.home:
-        return _getPageRoute(const HomeScreen(), settings);
+        return _getPageRoute(const HomePage(), settings);
       case RoutesName.signup:
         return _getPageRoute(const SignUpPage(), settings);
       case RoutesName.ressetPassword:

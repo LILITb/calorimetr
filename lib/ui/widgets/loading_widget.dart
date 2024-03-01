@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
-import '../colors.dart';
+import '../theme/colors.dart';
 
 class Loading extends StatelessWidget {
   const Loading({
@@ -19,13 +19,13 @@ class Loading extends StatelessWidget {
           color: AppColors.appThemeColor,
         ),
         child: const SizedBox(
-           width: 107,
-           height: 107,
+          width: 107,
+          height: 107,
           child: LoadingIndicator(
-              indicatorType: Indicator.ballRotateChase,
-              colors: [Colors.white],
-              strokeWidth: 1,
-              ),
+            indicatorType: Indicator.ballRotateChase,
+            colors: [Colors.white],
+            strokeWidth: 1,
+          ),
         ));
   }
 }

@@ -1,15 +1,20 @@
 import 'package:caloriegram/ui/theme/theme.dart';
-import 'package:caloriegram/utils/routes/routes.dart';
+import 'package:caloriegram/utils/utils.dart';
+
 import 'package:flutter/material.dart';
 
-import 'utils/routes/routes_name.dart';
-
 void main() {
-  runApp(const MyApp());
+  runApp(const CalormetrApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class CalormetrApp extends StatefulWidget {
+  const CalormetrApp({super.key});
+
+  @override
+  State<CalormetrApp> createState() => _CalormetrAppState();
+}
+
+class _CalormetrAppState extends State<CalormetrApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
